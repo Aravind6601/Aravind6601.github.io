@@ -35,7 +35,14 @@
             opacity: 1;
             transform: translateY(0);
         }
-
+        .glass-card {
+             background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(6, 182, 212, 0.4);
+            color: #E5E7EB;
+}
+    
         /* Project card flip animation */
         .project-card {
             perspective: 1000px;
@@ -123,7 +130,13 @@
                 <!-- Text Content -->
                 <div class="text-center md:text-left md:w-1/2 mt-10 md:mt-0">
                     <h2 class="text-5xl md:text-7xl font-bold text-white mb-4">Aravind Ili</h2>
-                    <p class="text-xl md:text-2xl text-cyan-400">Hi, I'm Avi - Building Intelligent Solutions with AI & ML</p>
+                    <p class="text-xl md:text-2xl text-cyan-400">Software Engineering Intern | Systems & AI Optimization</p>
+                    <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <div class="glass-card px-6 py-2 rounded-lg font-bold border-l-4 border-cyan-500">200+ LeetCode Solved</div>
+            <div class="glass-card px-6 py-2 rounded-lg font-bold border-l-4 border-cyan-500">8.5 CGPA | SNIST 2027</div>
+            <div class="glass-card px-6 py-2 rounded-lg font-bold border-l-4 border-cyan-500">Full-Stack AI</div>
+        </div>
+
                     <a href="#projects" class="mt-8 inline-block bg-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-600 transition-transform transform hover:scale-105">View My Work</a>
                     <div class="mt-10 flex justify-center md:justify-start space-x-4">
                         <!-- Instagram -->
@@ -226,21 +239,22 @@
         <section id="projects" class="py-20 scroll-animate" aria-labelledby="projects-heading">
             <h3 id="projects-heading" class="text-4xl font-bold text-center mb-12">Featured Projects</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: AgroMarket -->
+                <!-- Project 1: NPP -->
                 <div class="project-card h-80 md:h-96">
                     <div class="project-card-inner">
                         <div class="project-card-front bg-gray-800 p-6 flex flex-col justify-between">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">AgroMarket - E-commerce Platform</h4>
-                                <p class="text-gray-400 mt-2">A full-stack e-commerce web application for agricultural products.</p>
+                                <h4 class="text-2xl font-bold text-white">Neural Price Predictor</h4>
+                                <p class="text-gray-400 mt-2">High-variance housing price prediction system.</p>
                             </div>
                             <span class="text-cyan-400 self-end">Hover for details</span>
                         </div>
                         <div class="project-card-back bg-cyan-600 p-4 flex flex-col justify-center text-white overflow-y-auto">
-                            <h4 class="text-xl font-bold">AgroMarket</h4>
-                            <p class="text-sm mt-2"><strong>Tech Stack:</strong> React.js, Node.js, MongoDB, Redux</p>
-                            <p class="text-sm mt-2"><strong>Key Features:</strong> Product browsing & filtering, secure checkout, order tracking, and responsive UI.</p>
-                            <p class="text-sm mt-2"><strong>Highlight:</strong> Combines intuitive design with real-world functionality, making online agricultural trading simple and efficient.</p>
+                            <h4 class="text-xl font-bold">Neural Price Predictor</h4>
+                            <p class="text-sm mt-2"><strong>Tech Stack:</strong> TensorFlow, Flask, Scikit-Learn</p>
+                            <p class="text-sm mt-2"><strong>Key Features:</strong> Responsive UI, Fast and Reliable.</p>
+                            <p class="text-sm mt-2"><strong>Highlight:</strong> Built a 4-layer neural network with Adam optimization and dropout,
+                        improving baseline accuracy by 15% during internship work..</p>
                             <a href="#" class="mt-4 bg-white text-cyan-600 font-bold py-2 px-4 rounded-full text-center text-sm">View Project</a>
                         </div>
                     </div>
@@ -251,16 +265,17 @@
                     <div class="project-card-inner">
                         <div class="project-card-front bg-gray-800 p-6 flex flex-col justify-between">
                             <div>
-                                <h4 class="text-2xl font-bold text-white">SmartBeat - Flutter Music Player App</h4>
-                                <p class="text-gray-400 mt-2">A unique mobile music player with innovative features.</p>
+                                <h4 class="text-2xl font-bold text-white">SAHAYAK — AI GOV ENGINE</h4>
+                                <p class="text-gray-400 mt-2">Multilingual scheme discovery for non-technical citizens.</p>
                             </div>
                              <span class="text-cyan-400 self-end">Hover for details</span>
                         </div>
                         <div class="project-card-back bg-cyan-600 p-4 flex flex-col justify-center text-white overflow-y-auto">
-                             <h4 class="text-xl font-bold">SmartBeat</h4>
-                            <p class="text-sm mt-2"><strong>Tech Stack:</strong> Flutter, Dart, Firebase</p>
-                            <p class="text-sm mt-2"><strong>Key Features:</strong> Waveform-style progress bar, mood-based playlist switching, loop sections, sleep timer, and smart file sorting.</p>
-                            <p class="text-sm mt-2"><strong>Highlight:</strong> Focused on user convenience and customization, making music playback more interactive and enjoyable.</p>
+                             <h4 class="text-xl font-bold">Sahayak</h4>
+                            <p class="text-sm mt-2"><strong>Tech Stack:</strong> Python, NLP, FAISS, Vector DB</p>
+                            <p class="text-sm mt-2"><strong>Key Features:</strong> Fast and easy to use.</p>
+                            <p class="text-sm mt-2"><strong>Highlight:</strong>   Engineered a sub-second semantic search pipeline for 10,000+ users,
+                        reducing query latency by 40%               </p>
                              <a href="#" class="mt-4 bg-white text-cyan-600 font-bold py-2 px-4 rounded-full text-center text-sm">View Project</a>
                         </div>
                     </div>
@@ -485,4 +500,3 @@
 
 </body>
 </html>
-
